@@ -110,12 +110,13 @@ module.exports = {
   },
   optimization: optimization(),
   devServer: {
+    historyApiFallback: true,
     port: '4200',
     hot: isDev,
   },
   devtool: isDev ? 'source-map' : '',
   resolve: {
-    extensions: ['.js', 'jsx', '.png', '.json'],
+    extensions: ['.js', '.jsx', '.png', '.json'],
   },
   module: {
     rules: [

@@ -1,3 +1,15 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .app {
-  font-size: 24px;
+  display: flex;
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1200px;
 }
