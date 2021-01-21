@@ -1,15 +1,6 @@
-* {
-  font-family: 'Roboto', sans-serif;
-}
-a {
-  text-decoration: none;
-  color: #000;
-}
-
 .app {
   display: flex;
-  margin: 0 auto;
+  position: relative;
+  background-color: #e5e5e5;
   min-height: 100vh;
-  width: 100%;
-  max-width: 1200px;
 }
