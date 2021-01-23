@@ -1,0 +1,58 @@
+@import '../../variables';
+
+.orderForm {
+  margin-top: 32px;
+  .inputFieldWrap {
+    position: relative;
+    .inputField {
+      margin-bottom: 16px;
+      padding: 16px;
+      width: 288px;
+      height: 56px;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+      color: #000;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 16px;
+    }
+    .inputField::placeholder,
+    .inputField::-moz-placeholder {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+      color: rgba(0, 0, 0, 0.5);
+    }
+    .inputField:focus {
+      border: 1px solid $main-color;
+    }
+    .errorBorder {
+      border: 1px solid $main-error-color !important;
+    }
+    .errorMessage {
+      position: absolute;
+      bottom: 0;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: -0.02em;
+      color: $main-error-color;
+    }
+  }
+  .submitBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    margin-top: 16px;
+    width: 288px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: #fff;
+    text-transform: uppercase;
+    background: $main-color;
+    border-radius: 16px;
+  }
+}

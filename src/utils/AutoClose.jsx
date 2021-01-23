@@ -17,6 +17,13 @@ const AutoClose = (props) => {
     };
   }, []);
 
+  useEffect(() => {
+    if (props.isScroll) {
+      document.body.style.overflow = 'hidden';
+    }
+    return () => (document.body.style.overflow = 'visible');
+  }, [props.isScroll]);
+
   const escFunction = useCallback((event) => {
     if (event.keyCode === 27) {
       props.handleClose(false);
@@ -29,11 +36,8 @@ const AutoClose = (props) => {
       props.handleClose(false);
     }
   });
-  return (
-    <div style={props.styles} ref={wrapperRef}>
-      {props.children}
-    </div>
-  );
+
+  return <div ref={wrapperRef}>{props.render()}</div>;
 };
 
 export default AutoClose;

@@ -2,8 +2,12 @@ import React from 'react';
 
 import styles from './CheapestButton.module.scss';
 
-const CheapestButton = () => {
-  return <button className={styles.cheapestBtn}>Buy cheapest</button>;
+const CheapestButton = ({ setCheapestProduct }) => {
+  return (
+    <button className={styles.cheapestBtn} onClick={setCheapestProduct}>
+      Buy cheapest
+    </button>
+  );
 };
 
 export default CheapestButton;

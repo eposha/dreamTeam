@@ -5,18 +5,9 @@ const Loader = () => {
   return (
     <div className={styles.loaderWrap}>
       <div className={styles.ldsDefault}>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        {[...Array(12)].map((elem, i) => (
+          <div key={i} />
+        ))}
       </div>
     </div>
   );

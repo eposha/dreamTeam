@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 200px);
+  height: 100vh;
   width: 100%;
 }
 .ldsDefault {
@@ -16,7 +16,7 @@
   position: absolute;
   width: 6px;
   height: 6px;
-  background: $main-active-color;
+  background: $loader-color;
   border-radius: 50%;
   animation: ldsDefault 1.2s linear infinite;
 }
