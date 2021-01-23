@@ -1,5 +1,5 @@
 import React from 'react';
-import OrderForm from '../OrderForm/OrderForm';
+import OrderForm from '../../containers/OrderForm/OrderForm';
 import DollarIcon from '../../images/dollar.svg';
 import { capitalize } from '../../utils/capitalize';
 import CloseIcon from '../../images/close.svg';
