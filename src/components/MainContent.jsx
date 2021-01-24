@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from 'react';
-import { autoCloseStyle } from './MainContentGateway';
 import CardItem from '../containers/CardItem/CardItem';
 import CheapestButton from '../containers/CheapestButton/CheapestButton';
 import OrderPopup from '../components/OrderPopup/OrderPopup';
@@ -48,7 +47,6 @@ const MainContent = ({ data }) => {
         <div className={styles.orderWrap}>
           <AutoClose
             handleClose={setOrderData}
-            styles={autoCloseStyle}
             isScroll={Boolean(orderData)}
             render={() => (
               <OrderPopup orderData={orderData} setOrderData={setOrderData} />
